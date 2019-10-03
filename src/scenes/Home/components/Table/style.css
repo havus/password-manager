@@ -1,0 +1,111 @@
+.main-table {
+  margin: 20px;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: rgba(228, 237, 245, .8);
+}
+
+.main-table th, .main-table td {
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  position: relative;
+}
+.main-table th {
+  height: 40px;
+}
+.main-table td {
+  height: 50px;
+}
+.main-table tr {
+  border-bottom: 1px solid rgb(173, 173, 173);
+  transition: .3s;
+}
+.main-table tbody tr:last-child {
+  border: none;
+}
+.main-table tbody tr:hover {
+  background-color: rgba(228, 237, 245, .8);
+}
+
+.main-table button {
+  border: none;
+  padding: 5px 7px;
+  margin: 0 3px;
+  border-radius: 3px;
+  color: white;
+}
+
+.main-table input {
+  width: 100%;
+  border: none;
+  text-align: center;
+  height: 80%;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, .7);
+  border-radius: 5px 5px 0 0;
+}
+.main-table .border-bottom {
+  height: 1px;
+  width: 90%;
+  z-index: 5;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgb(194, 194, 194);
+}
+.main-table .border-bottom::before {
+  content: '';
+  position: absolute;
+  height: 130%;
+  border-radius: 2px;
+  width: 0;
+  z-index: 5;
+  top: 0;
+  left: 50%;
+  background-color: rgb(0, 0, 0);
+  transform: translateX(-50%);
+  transition: .3s;
+}
+.main-table input:focus ~ .border-bottom::before {
+  width: 100%;
+}
+
+.edit-btn {
+  background-color: royalblue;
+  transition: .3s;
+}
+.edit-btn:hover {
+  background-color: rgba(65, 105, 225, .75);
+}
+.edit-btn:active {
+  background-color: rgba(65, 105, 225, .9);
+}
+
+.delete-btn {
+  background-color: rgb(225, 65, 65);
+  transition: .3s;
+}
+.delete-btn:hover {
+  background-color: rgba(225, 65, 65, .75);
+}
+.delete-btn:active {
+  background-color: rgba(225, 65, 65, .9);
+}
+.fas.fa-times {
+  margin: 1.5px;
+  height: 15px;
+}
+
+.confirm-btn {
+  background-color: rgb(40, 212, 91);
+  transition: .3s;
+}
+.confirm-btn:hover {
+  background-color: rgba(40, 212, 91, .75);
+}
+.confirm-btn:active {
+  background-color: rgba(40, 212, 91, .9);
+}

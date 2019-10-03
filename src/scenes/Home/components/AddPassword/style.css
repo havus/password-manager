@@ -1,0 +1,52 @@
+#addPassword {
+  background-color: rgba(163, 163, 163, 0.445);
+  padding: 20px;
+  transition: 1s;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+#addPassword table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#addPassword tr {
+  margin-top: 50px;
+  border-top: 5px solid transparent;
+}
+
+#addPassword td {
+  text-align: right;
+  padding: 0 5px;
+}
+
+#addPassword tr td:first-child {
+  margin-right: 200px;
+  width: 150px;
+  color: white;
+}
+
+#addPassword input {
+  width: 100%;
+}
+
+#addPassword button {
+  margin: 15px 0;
+  width: 100% !important;
+}
+
+.simple-validation {
+  text-align: left !important;
+}
+
+.simple-validation span {
+  margin-left: 10px;
+}
+
+.simple-validation .fas.fa-times {
+  color: rgb(255, 42, 42) !important;
+}
+.simple-validation .fas.fa-check {
+  color: rgb(71, 253, 71) !important;
+}

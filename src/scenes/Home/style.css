@@ -1,0 +1,114 @@
+#bg {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,.15);
+}
+#home-container-box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+#home-conteiner {
+  max-width: 1200px;
+  margin: 0 20px;
+}
+#header-container {
+  padding: 20px;
+  margin-top: 20px;
+}
+#header-container button {
+  border: none;
+  width: 150px;
+  padding: 9px;
+  border-radius: 5px;
+  color: white;
+  background-color: royalblue;
+  letter-spacing: 1px;
+  transition: .3s;
+}
+#header-container button:hover {
+  background-color: rgb(74, 117, 247);
+}
+#header-container button:active {
+  background-color: rgb(66, 104, 219);
+}
+
+#modal-content {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  position: fixed;
+  z-index: 2;
+  border-radius: 3px;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  width: 300px;
+  transition: 2s;
+}
+
+#modal-content #close-modal {
+  position: absolute;
+  border: none;
+  right: 0;
+  margin: 15px;
+  background-color: transparent;
+}
+
+#btn-group {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+#btn-group button {
+  width: 40%;
+  background-color: transparent;
+  border: none;
+  padding: 15px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+#modal-content p {
+  margin: 40px 20px 30px;
+  font-size: 20px;
+  text-align: center;
+}
+
+#btn-group button#confirm {
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2px;
+  background-color: rgb(40, 167, 69);
+  transition: .5s;
+}
+#btn-group button#confirm:hover {
+  background-color: rgb(40, 167, 69, .75);
+}
+#btn-group button#confirm:active {
+  background-color: rgb(40, 167, 69, .9);
+}
+
+#btn-group button#cancel {
+  background-color: rgb(233, 58, 58);
+  color: white;
+  font-weight: 400;
+  letter-spacing: 2px;
+  transition: .5s;
+}
+#btn-group button#cancel:hover {
+  background-color: rgb(233, 58, 58, .75);
+}
+#btn-group button#cancel:active {
+  background-color: rgb(233, 58, 58, .9);
+}

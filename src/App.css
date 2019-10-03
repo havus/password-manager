@@ -1,0 +1,15 @@
+*, ul, li, body, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  background-image: linear-gradient(to right bottom,
+  rgba(164, 175, 194, 0.1), 
+  rgba(166, 170, 185, 0.3)), 
+  url(./assets/img/hero.jpg);
+  background-repeat: no-repeat;
+  height: 100vh;
+}
